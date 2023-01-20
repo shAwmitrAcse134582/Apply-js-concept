@@ -18,3 +18,9 @@ console.log(Math.floor(n));
 
 //random function
 console.log(Math.round(Math.random() * 100));
+
+let arr = [23, 34, 56, 65, 76, 443, 32, 56];
+let mx = Math.max(...arr);
+let mn = Math.min(...arr);
+console.log(mx);
+console.log(mn);
