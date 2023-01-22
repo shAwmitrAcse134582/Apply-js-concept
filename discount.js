@@ -15,3 +15,21 @@ else if (ticketNumber > 100 && ticketNumber <= 200) {
 else {
     console.log(100 * 100 + 100 * 90 + (ticketNumber - 200) * 70);
 }
+
+// *unsing function same problem
+
+function discountPackage(n) {
+    let total;
+    if (n <= 100)
+        total = (n * 100);
+    else if (n > 100 && n <= 200) {
+        total = (100 * 100 + (n - 100) * 90);
+    }
+    else {
+        total = (100 * 100 + 100 * 90 + (n - 200) * 70);
+    }
+    return total;
+}
+let tn = 100;
+let value = discountPackage(tn);
+console.log(value);
